@@ -1,0 +1,669 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url(font/dosis.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#main #nav {
+    width: 100%;
+    height: 99px;
+    box-shadow: 0px 5px 10px #54545486;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+}
+
+#nav #tml {
+    height: 42%;
+    width: 17%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#nav #tata-logo {
+    width: 13%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main #eday {
+    width: 92%;
+    height: 70%;
+    /* background-color: red; */
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#eday #text {
+    width: 37%;
+    height: 100%;
+    background-color: #47a2d6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text h2 {
+    font-family: 'Dosis';
+    font-size: 60px;
+    color: #fff;
+}
+
+#text h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+#image {
+    width: 63%;
+    height: 100%;
+}
+
+#eday #image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#main #box {
+    width: 90%;
+    height: 32%;
+    /* background-color: red; */
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#box h2 {
+    font-family: 'Dosis';
+    color: #fff;
+    text-transform: uppercase;
+    padding: 35px 0px 18px 32px;
+    text-align: start;
+    font-size: 15px;
+    letter-spacing: 1px;
+    /* font-weight: 900; */
+}
+
+#box h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    padding: 15px 20px 0px 32px;
+    margin-top: -19px;
+}
+
+.rm img {
+    width: 20px;
+}
+
+#box .colflex:nth-child(1) .rm h4 {
+    position: absolute;
+    bottom: 15px;
+}
+
+#box .colflex:nth-child(1) .rm img {
+    position: absolute;
+    left: 42%;
+    bottom: 14px;
+}
+
+#box .colflex:nth-child(2) .rm h4 {
+    position: absolute;
+    bottom: 15px;
+}
+
+#box .colflex:nth-child(2) .rm img {
+    position: absolute;
+    left: 42%;
+    bottom: 14px;
+}
+
+#box .colflex:nth-child(3) .rm h4 {
+    position: absolute;
+    bottom: 15px;
+}
+
+#box .colflex:nth-child(3) .rm img {
+    position: absolute;
+    left: 21%;
+    bottom: 14px;
+}
+
+.rm {
+    display: flex;
+    width: 80%;
+    background-color: red;
+}
+
+#box #box1 {
+    width: 25%;
+    height: 100%;
+    background-color: #5ebfb6;
+    position: relative;
+}
+
+#box #box2 {
+    border-left: 0.2px solid white;
+    width: 25%;
+    height: 100%;
+    background-color: #5ebfb6;
+    position: relative;
+}
+
+#box #box3 {
+    border-left: 0.2px solid white;
+    width: 50%;
+    height: 100%;
+    background-color: #47a2d6;
+    position: relative;
+}
+
+#social {
+    width: 100%;
+    height: 50vh;
+    background-color: #edf0f2;
+    position: absolute;
+    top: 137%;
+}
+
+#main #videos {
+    width: 90%;
+    height: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video {
+    width: 28%;
+    height: 90%;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px #81818186;
+    position: relative;
+}
+
+.vid {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.vid>img {
+    object-fit: cover;
+    /* object-position: 2px 2px; */
+    width: 100%;
+    height: 100%;
+}
+
+.vid .yt {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yt img {
+    object-fit: cover;
+    width: 50%;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 500px) {
+    /* Styles */
+    #main #nav {
+        width: 100%;
+        height: 80px;
+        box-shadow: 0px 10px 20px #81818186;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* position: fixed; */
+    }
+
+    #main #eday {
+        width: 95%;
+        height: 40%;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #eday #image {
+        width: 100%;
+        height: 70%;
+    }
+    
+    #eday #image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #eday #text {
+        width: 100%;
+        height: 30%;
+        background-color: #47a2d6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #text h2 {
+        font-family: 'Dosis';
+        font-size: 30px;
+        line-height: 28px;
+        color: #fff;
+    }
+    
+    #text h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #main #box {
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #box h2 {
+        font-family: 'Dosis';
+        color: #fff;
+        text-transform: uppercase;
+        padding: 30px 0px 0px 32px;
+        text-align: start;
+        font-size: 15px;
+        letter-spacing: 1px;
+        /* font-weight: 900; */
+    }
+    
+    #box h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 20;
+        color: #fff;
+        text-align: left;
+        padding: 15px 0px 0px 32px;
+        margin-top: -7px;
+    }
+    
+    .rm img {
+        width: 20px;
+    }
+    
+    #box .colflex:nth-child(1) .rm h4 {
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    #box .colflex:nth-child(1) .rm img {
+        position: absolute;
+        left: 32%;
+        bottom: 19px;
+    }
+    
+    #box .colflex:nth-child(2) .rm h4 {
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    #box .colflex:nth-child(2) .rm img {
+        position: absolute;
+        left: 32%;
+        bottom: 19px;
+    }
+    
+    #box .colflex:nth-child(3) .rm h4 {
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    #box .colflex:nth-child(3) .rm img {
+        position: absolute;
+        left: 32%;
+        bottom: 19px;
+    }
+    
+    .rm {
+        display: flex;
+        width: 80%;
+        background-color: red;
+    }
+    
+    #box #box1 {
+        width: 100%;
+        height: 40%;
+        background-color: #5ebfb6;
+        position: relative;
+    }
+    
+    #box #box2 {
+        border-top: 0.2px solid white;
+        width: 100%;
+        height: 34%;
+        background-color: #5ebfb6;
+        position: relative;
+    }
+    
+    #box #box3 {
+        border-top: 0.2px solid white;
+        width: 100%;
+        height: 47%;
+        background-color: #47a2d6;
+        position: relative;
+    }
+
+    #social {
+        width: 100%;
+        height: 100vh;
+        background-color: #edf0f2;
+        position: absolute;
+        top: 142%;
+    }
+    
+    #social #videos {
+        width: 90%;
+        height: 90%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .video {
+        width: 100%;
+        height: 28%;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px #81818186;
+        position: relative;
+    }
+    
+    .vid {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .vid>img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .vid .yt {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .yt img {
+        object-fit: cover;
+        width: 50%;
+    }
+}
+
+/* Tablets, iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    #main #nav {
+        width: 100%;
+        height: 99px;
+        box-shadow: 0px 10px 20px #81818186;
+        display: flex;
+        padding: 0px 50px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #main #eday {
+        width: 95%;
+        height: 32%;
+        /* background-color: red; */
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #eday #text {
+        width: 37%;
+        height: 100%;
+        background-color: #47a2d6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #text h2 {
+        font-family: 'Dosis';
+        font-size: 50px;
+        color: #fff;
+    }
+    
+    #text h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    
+    #image {
+        width: 63%;
+        height: 100%;
+    }
+    
+    #eday #image img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #main #box {
+        width: 90%;
+        height: 35%;
+        /* background-color: red; */
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #box h2 {
+        font-family: 'Dosis';
+        color: #fff;
+        text-transform: uppercase;
+        padding: 35px 0px 18px 32px;
+        text-align: start;
+        font-size: 15px;
+        letter-spacing: 1px;
+        /* font-weight: 900; */
+    }
+    
+    #box h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 20;
+        color: #fff;
+        text-align: left;
+        padding: 20px 30px 0px 32px;
+        /* word-wrap: wrap; */
+    }
+    
+    .rm img {
+        width: 20px;
+        margin-left: -45px;
+    }
+    
+    .rm {
+        display: flex;
+        width: 80%;
+    }
+    
+    #box #box1 {
+        width: 50%;
+        height: 50%;
+        background-color: #5ebfb6;
+        position: relative;
+    }
+    
+    #box #box2 {
+        border-left: 0.2px solid white;
+        width: 50%;
+        height: 50%;
+        background-color: #5ebfb6;
+        position: relative;
+    }
+    
+    #box #box3 {
+        border-top: 0.2px solid white;
+        width: 100%;
+        height: 50%;
+        background-color: #47a2d6;
+        position: relative;
+        align-self: flex-end;
+    }
+
+    #social {
+        width: 100%;
+        height: 28vh;
+        background-color: #edf0f2;
+        position: absolute;
+        top: 84%;
+    }
+    
+    #main #videos {
+        width: 90%;
+        height: 47%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .video {
+        width: 28%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0px 10px 20px #81818186;
+        position: relative;
+    }
+    
+    .vid {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .vid>img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .vid .yt {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .yt img {
+        object-fit: cover;
+        width: 50%;
+    }
+}
